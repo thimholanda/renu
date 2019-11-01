@@ -1,0 +1,281 @@
+.re-full-bg
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+.btn-menu
+  position: absolute
+  background: none
+  border: none
+  top: 30px
+  left: 30px
+  cursor: pointer
+  transition: all .3s
+
+  &:hover
+    opacity: .7
+
+  &:focus
+    outline: none !important
+
+.btn-menu-fixed
+  background-color: $light-blue
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  padding: 14px 20px
+  z-index: 1000
+  border-bottom: 1px solid white
+
+  .fa-bars
+    font-size: 2.5rem !important
+
+  h1
+    img
+      width: 70px
+
+a
+  transition: all .3s
+  &:hover
+    text-decoration: none
+
+.text-dark-blue
+  color: $dark-blue
+
+.text-light-blue
+  color: $light-blue
+
+.text-highlight
+  background-color: $dark-blue
+  color: white
+  display: inline-block
+  padding: .5rem .7rem
+
+.tooltip-inner-gray
+  font-family: 'Helvetica', 'sans-serif'
+  border: 1px solid rgba($secondary, .5)
+  min-width: 280px
+
+.btn:focus
+  outline: none !important
+
+.tooltip .fa-info-container
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: -7px
+  width: 30px
+  height: 30px
+  background-color: rgba(white, .95)
+  border: 1px solid rgba($secondary, .7)
+  border-radius: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  .fa-info
+    font-size: 1rem !important
+
+.icon-cuidados
+  display: inline-block
+  width: 52px
+  height: 52px
+  background-repeat: no-repeat
+  background-size: cover
+  margin-right: 10px
+  background-image: url("../imgs/sprite-6-cuidados.svg")
+
+.icon-cuidados-limpa
+  background-position: 0 0
+
+.icon-cuidados-desinfecta
+  background-position: 0 -52px
+
+.icon-cuidados-conserva
+  background-position: 0 -104px
+
+.icon-cuidados-lubrifica
+  background-position: 0 -158px
+
+.icon-cuidados-hidrata
+  background-position: 0 -210px
+
+.icon-cuidados-remove-proteinas
+  background-position: 0 -260px
+
+.text-helvetica
+  font-family: 'Helvetica', 'sans-serif'
+
+.cuidados-divider
+  background-color: $dark-blue
+  max-width: 280px
+  width: 100%
+  height: 10px
+  margin: 1.5rem 0
+  display: inline-block
+
+#familia-renu-fresh
+  position: relative
+
+.familia-bar
+  width: 100%
+  height: 250px
+  background-color: $light-blue
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-42%)
+
+.familia-box
+  width: 100%
+  background-color: white
+  border: 5px solid $light-blue
+  border-radius: 20px
+  padding: 54px
+
+.duvidas-box
+  width: 100%
+  background-color: white
+  border: 5px solid $blue
+  border-radius: 20px
+  padding: 54px
+
+.title-traced
+  position: relative
+
+  &:before
+    content: ''
+    display: block
+    width: 90px
+    height: 10px
+    background-color: $dark-blue
+    position: absolute
+    left: 0
+    top: -10px
+
+  &:after
+    content: ''
+    display: block
+    width: 300px
+    height: 10px
+    background-color: $dark-blue
+    position: absolute
+    left: 0
+    bottom: -15px
+
+.title-traced-small
+  &:before
+    width: 40px
+
+.guia-bg-top
+  width: 100%
+  height: 738px
+  background: url("../imgs/bg-guia-top.jpg") no-repeat center
+  background-size: cover
+
+
+.bg-light-green
+  background-color: $light-green
+
+.bg-light-blue
+  background-color: $light-blue
+
+.bg-light-green-2
+  background-color: $light-green-2
+
+.guia-bg-bottom
+  background-image: url("../imgs/bg-guia-bottom.jpg")
+  padding-bottom: 400px
+  background-position: center bottom
+  background-repeat: no-repeat
+
+.border-dark-blue
+  border-color: $dark-blue !important
+  border-width: 2px !important
+
+.bg-blue
+  background-color: $blue
+
+.icon-social
+  width: 50px !important
+  height: 50px !important
+  border: 2px solid white
+  border-radius: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.btn-hover-white:hover
+  background-color: rgba(white, .4)
+
+.btn-hover-dark-blue:hover
+  background-color: rgba($dark-blue, .4)
+
+.menu
+  width: 100%
+  height: 100vh
+  max-width: 1000px
+  z-index: 1001
+  position: fixed
+  left: -100%
+  top: 0
+  transition: all .5s
+
+.menu-opened
+  left: 0
+
+.bg-circle
+  width: 150%
+  height: 150%
+  background-color: $dark-blue
+  position: absolute
+  left: -50%
+  top: 50%
+  border-radius: 100%
+  transform: translateY(-50%)
+
+.border-dark-blue
+  border: 1px solid $dark-blue !important
+
+.border-light-green-2
+  border: 1px solid $light-green-2 !important
+
+.border-blue
+  border: 1px solid $blue !important
+
+.btn-accordion
+  outline: none !important
+  width: 100%
+  background-color: $light-green-2
+  border: none
+  margin: 0
+  transition: all .3s
+  text-align: left
+  color: white
+  font-weight: bold
+  padding: 20px 30px
+  display: flex
+  flex-direction: row
+
+  &:focus, &:visited, &:active
+    outline: none !important
+
+  &:hover
+    background-color: $light-green
+
+.btn-accordion-dark-blue
+  background-color: $dark-blue
+
+  &:hover
+    background-color: $blue
+
+
+.regular-list
+  li + li
+    margin-top: 1rem
+
+
+
