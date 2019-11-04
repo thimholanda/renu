@@ -1,7 +1,8 @@
 .re-full-bg
   background-repeat: no-repeat
-  background-position: center center
+  background-position: right center
   background-size: cover
+
 
 .btn-menu
   position: absolute
@@ -82,6 +83,7 @@ a
   display: inline-block
   width: 52px
   height: 52px
+  flex-shrink: 0
   background-repeat: no-repeat
   background-size: cover
   margin-right: 10px
@@ -140,7 +142,7 @@ a
   background-color: white
   border: 5px solid $blue
   border-radius: 20px
-  padding: 54px
+  padding: 30px 0
 
 .title-traced
   position: relative
@@ -158,7 +160,7 @@ a
   &:after
     content: ''
     display: block
-    width: 300px
+    width: 250px
     height: 10px
     background-color: $dark-blue
     position: absolute
@@ -223,18 +225,21 @@ a
   left: -100%
   top: 0
   transition: all .5s
+  overflow: scroll
+  -webkit-overflow-scrolling: touch
+  background-color: $dark-blue
 
 .menu-opened
   left: 0
 
 .bg-circle
-  width: 150%
-  height: 150%
+  width: 100%
+  height: 100%
   background-color: $dark-blue
   position: absolute
-  left: -50%
+  left: 0
   top: 50%
-  border-radius: 100%
+  border-radius: 0
   transform: translateY(-50%)
 
 .border-dark-blue
@@ -276,6 +281,32 @@ a
 .regular-list
   li + li
     margin-top: 1rem
+
+
+@include media-breakpoint-up(md)
+
+  .menu
+    overflow: hidden
+    background-color: transparent
+
+  .re-full-bg
+    background-position: center center
+
+  .bg-circle
+    width: 150%
+    height: 150%
+    left: -50%
+    border-radius: 100%
+    transform: translateY(-50%)
+
+
+@include media-breakpoint-up(lg)
+  .mt-minus-200
+    margin-top: -200px !important
+
+  .duvidas-box
+    padding: 54px
+
 
 
 
